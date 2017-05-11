@@ -5,10 +5,12 @@
     <title>Home</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="aos-master/dist/aos.css" />
 
   </head>
   <body>
@@ -91,20 +93,28 @@
       <section class="places-run-bsas">
         <h2>Lugares para correr en Buenos Aires</h2>
 
-        <article class="palermo">
-          <h3>Palermo </h3>
-          <img src="images/palermo.jpg" alt="">
-          <p><strong>Distancia</strong>: 9km.</p>
-          <p>
-            <strong>Punto de salida</strong>: Centro de Información Turística (CIT) Planetario. Av. Sarmiento 4200 y av. Figueroa Alcorta.
-          </p>
-          <p>
-            <strong>Recorrido</strong>: MALBA, Jardín Japonés, Planetario, Rosedal de Palermo, Monumento a los Españoles, Museo de Arte Decorativo, Museo Nacional de Bellas Artes, Facultad de Derecho.
-          </p>
-          <p>
-            <strong>Día y horario</strong>: 2º sábado y 4º domingo del mes a las 10 horas.
-          </p>
-        </article>
+
+          <article class="palermo">
+            <div data-aos="fade-right">
+              <h3>Palermo </h3>
+            </div>
+            <div data-aos="zoom-in">
+              <img src="images/palermo.jpg" alt="">
+            </div>
+            <div data-aos="fade-right">
+              <p><strong>Distancia</strong>: 9km.</p>
+              <p>
+                <strong>Punto de salida</strong>: Centro de Información Turística (CIT) Planetario. Av. Sarmiento 4200 y av. Figueroa Alcorta.
+              </p>
+              <p>
+                <strong>Recorrido</strong>: MALBA, Jardín Japonés, Planetario, Rosedal de Palermo, Monumento a los Españoles, Museo de Arte Decorativo, Museo Nacional de Bellas Artes, Facultad de Derecho.
+              </p>
+              <p>
+                <strong>Día y horario</strong>: 2º sábado y 4º domingo del mes a las 10 horas.
+              </p>
+            </div>
+          </article>
+
 
         <article class="puerto-madero">
         </article>
@@ -119,5 +129,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+    <script src="aos-master/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        easing: 'ease-in-out-sine'
+      });
+    </script>
   </body>
 </html>
