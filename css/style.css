@@ -25,14 +25,17 @@ body {
 }
 */
 
-.places-run-bsas h2,h3{
+.places-run-bsas h2{
   text-align: center;
 }
 
-.palermo p,img,h3{
-  margin-bottom: 20px;
+.places-run-bsas article{
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
-.palermo img{
+.places-run-bsas article img{
   width: 100%;
+  display: inline-block;
+  padding-top: 30px;
 }
